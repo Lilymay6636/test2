@@ -1,0 +1,116 @@
+/* 練習： 卡片製作 */
+body {
+    background-color: rgb(194, 194, 194);
+    font-family: "Microsoft YaHei";
+}
+.card {
+    width: 450px;
+    height: 270px;
+    background-color: #FFF;
+    /* border: 1 solid #000; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    /*  rgba(red, green, blue, alpha) color+透明度*/
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+'/* 往佐先推50%距離(以整頁寬度)，在往右推50%距離(以div寬度)  垂直同理*/
+}
+.top {
+    /* background-color: rgb(255, 129, 129); */
+    width: 90%;
+    /* height: 30%; */
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.top p {
+    font-size: 20px;
+    border-bottom:2px solid #2457cd ;
+    color: #2457cd;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.mid {
+    width: 90%;
+    /* background-color: rgb(255, 175, 175); */
+    margin-left: 20px;
+}
+.name, .contact {
+    display: inline-block;
+    vertical-align: top;
+    /* 垂直對齊 */
+    margin-left: 20px;
+}
+ /* 改變"name"及"contact"的排列模式 display */
+
+ .name {
+    margin-top: 35px;
+    /* background-color: #fff; */
+}
+
+.name p {
+    /* background-color: rgb(99, 249, 156); */
+    margin: 0;
+    /* 因為p也有自己的margin設定，想要0距離所以margin需要設為0 */
+    font-weight: bold;
+}
+
+.chinese {
+    /* border: 1px dashed #000; */
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.chinese span {
+    font-size: 12px;
+}
+
+
+.english {
+    border: 1px dashed #000;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.contact {
+    /* border: 1px dashed #000; */
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.contact p {
+    /* background-color: rgb(109, 165, 248); */
+    margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.bot {
+    background-color:#2457cd ;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    /* 順序: 左上 右上 右下 左下 */
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bot p {
+    /* border: 1px dashed #000; */
+    font-size: 14px;
+    margin: 1px 0 4px 20px;
+    /* margin: 0 0 0 20px;
+    padding: 5px; 
+    老師範例*/
+
+}
